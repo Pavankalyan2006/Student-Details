@@ -1,0 +1,77 @@
+.student-table-conatiner {
+    width: 40%;
+}
+
+.app_container {
+    min-height: 100vh;
+    background-image: url('../../public/classroom2.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: scroll;
+    /* padding: 50px; */
+    
+}
+
+.app_container::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+
+
+.header__container {
+    margin: 0 20px 20px 20px ;
+}
+
+.table__container {
+    margin: 0 10px 10px 30px;
+}
+
+.add_student_container {
+    margin: 0 10px 10px 30px;
+}
+
+/* --------------- */
+.example1 {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+   }
+   .example1 h3 {
+    font-size: 1.5rem;
+    color: rgb(228, 155, 19);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+   text-shadow: 1px 1px 4px rgb(109, 177, 9);
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: example1 15s linear infinite;
+    -webkit-animation: example1 15s linear infinite;
+    animation: example1 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes example1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }

@@ -1,0 +1,55 @@
+
+<button class="add-button" (click)="toggleDiv()">Add Student</button>
+
+<div  class="expandable" [class.active]="isExpanded">
+    <section class="form__header">
+        <h1>Enter Student Details </h1>
+    </section>
+
+    <section class="form__body">
+        <form  class="student-form">
+            <div class="form-column"> 
+                <label for="">Enter Id:</label>
+                <input type="text" name="" id="" [(ngModel)]="studentObj.id" name="id" required #stuId="ngModel" >
+                <div  *ngIf="stuId.touched && stuId.errors?.['required']">
+                        Id is reuqired
+                </div>
+            </div>
+
+            <div class="form-column"> 
+                <label for="">Enter Name:</label>
+                <input type="text" name="" id="" [(ngModel)]="studentObj.student" name="student">
+            </div>
+
+            <div class="form-column"> 
+                <label for="">Enter Email:</label>
+                <input type="text" name="" id=""  [(ngModel)]="studentObj.email" name="email">
+            </div>
+
+            <div class="form-column"> 
+                <label for="">Enter Gender:</label>
+                <input type="text" name="" id=""  [(ngModel)]="studentObj.gender" name="gender">
+            </div>
+       
+            <div class="form-column"> 
+                <label for="">Enter Subject:</label>
+                <input type="text" name="" id=""  [(ngModel)]="studentObj.subject" name="subject">
+            </div>
+
+         
+
+            <div class="form-column"> 
+                <label for="">Enter Marks:</label>
+                <input type="text" name="" id="" [(ngModel)]="studentObj.marks" name="marks">
+            </div>
+
+            <div class="form-column" > 
+               <button type="button" (click)="onAddStudentSave()">Save</button>
+            </div>
+
+        </form>
+    </section>
+
+</div>
+
+

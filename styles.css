@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+@import 'ngx-toastr/toastr';
+
+/* animation: gelatine 0.5s ease;    */
+@keyframes gelatine {
+    from,
+    to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }

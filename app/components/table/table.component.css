@@ -1,0 +1,96 @@
+td img {
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table, th, td {
+    padding: 12px;
+    text-align: left;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main.table {
+    /* width: 100%; */
+    /* width: 82vw; */
+    width: 82vw;
+  
+    /* height: 90vh; */
+    background-color: rgba(255, 255, 255,.4);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px black;
+    overflow: hidden;
+}
+
+.table__header {
+    width: 100%;
+    background-color: rgba(255, 255, 255,.4);
+    padding: 7px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.table__body {
+    width: 100%;
+    overflow: auto;
+
+    /* background-color: rgba(255, 255, 255,.3); */
+    /* margin: 20px; */
+    border-radius: 10px;
+    padding: 15px;
+
+    /* width: 82vw; */
+  
+}
+
+
+
+thead th {
+        background-color: rgba(173, 216, 230,.3);
+       
+}
+
+tbody tr {
+    color: white;
+    text-shadow: 0 0 5px black;
+  
+    transition: all .1s ease;
+}
+
+
+
+tbody tr:hover {
+    /* font-size:1.2rem ; */
+    font-weight: 600;
+}
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0,.3);
+}
+
+
+.reaction {
+    font-size: 1.6rem;
+    /* animation: gelatine 0.8s ease infinite;   */
+}
+
+
+.delete-icon {
+    font-size: 1.5rem;
+    color: red;
+    text-shadow: 0 0 4px white;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease-in-out;
+}
+
+.delete-icon:hover {
+    font-size: 1.8rem;
+}

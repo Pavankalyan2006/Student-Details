@@ -1,0 +1,42 @@
+
+
+
+
+<main class="table">
+    <section class="table__header">
+        <h1>Student Management</h1>
+    </section>
+
+    <section class="table__body">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Student</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Remark</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentData">
+                    <td>{{student.id}}</td>
+                    <td><img [src]="student.img" alt="">{{student.student}}</td>
+                    <td>{{student.email}}</td>
+                    <td>{{student.gender}}</td>
+                    <td>{{student.subject}}</td>
+                    <td>{{student.marks}}</td>
+                    <td class="reaction" *ngIf="student.marks >= 50 ">😇</td>
+                    <td class="reaction" *ngIf="student.marks < 50 ">😭</td>
+                    <td class="delete-icon"   > <span (click)="onDeleteStudent(student.id)"><i class="bi bi-trash-fill"></i></span></td>
+                </tr>
+
+               
+            </tbody>
+        </table>
+    </section>
+</main>
+

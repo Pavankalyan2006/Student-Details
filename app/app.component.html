@@ -1,0 +1,37 @@
+<!-- <app-header></app-header> -->
+ <!-- <div class="student-table-conatiner">
+
+     <app-student-table></app-student-table>
+ </div> -->
+
+
+
+
+ <div class="app_container">
+    <div class="header__container">
+
+        <app-header></app-header>
+        
+    </div>
+
+    <div>
+        <div class="example1">
+            <h3>Quote of the Day:  {{quoteData.text}} </h3>
+            </div>
+    </div>
+
+   
+        <div class="add_student_container">
+            <app-add-student (createStudentEvent)="handleAddStudent($event)" ></app-add-student>
+        </div>
+    
+        <div class="table__container">
+    
+            <app-table [studentData]="studentData" (deleteStudentEvent)="handleDeleteStudent($event)"></app-table>
+        </div>
+
+        <!-- <router-outlet></router-outlet> -->
+  
+   
+
+ </div>

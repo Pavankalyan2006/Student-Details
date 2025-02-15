@@ -1,0 +1,100 @@
+
+.expandable {
+  
+    max-height: 0;
+    padding: 0;
+    margin-top: 15px;
+   
+
+
+    width: 82vw;
+  
+    /* height: 90vh; */
+    background-color: rgba(255, 255, 255,.4);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px black;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.expandable.active {
+    max-height: 240px; /* Adjust as needed */
+    /* padding: 10px; */
+}
+
+.add-button {
+
+    padding: 7px;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255,.6);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px black;
+    font-size: 1rem;
+}
+
+.add-button:hover {
+  
+    box-shadow: 1px 1px 9px rgb(224, 224, 224);
+}
+
+.form__header {
+    padding: 10px;
+    background-color: rgba(255, 255, 255,.3);
+}
+
+
+.form__body{
+    padding: 15px;
+ 
+    /* background-color: rgba(255, 255, 255,.3); */
+}
+
+input{
+    background-color: rgba(0, 0, 0,.3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    padding: 5px;
+   
+}
+
+label {
+    font-weight: 600;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.form-column button {
+  
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 13px;
+
+    background-color: rgba(0, 217, 255, 0.4);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px black;
+    font-size: 1rem;
+    width: 100px;
+    
+}
+.form-column button:hover {
+
+    box-shadow: 1px 1px 9px rgba(5, 139, 188, 0.7);
+}
+
+
+.student-form{
+    display: flex;
+    flex-wrap: wrap;
+}
